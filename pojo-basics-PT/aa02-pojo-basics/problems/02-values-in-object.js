@@ -16,8 +16,16 @@ valuesInObject(foods); // => ["tart", "sour", "sweet"]
 
 
 
+// function valuesInObject(obj) {
+//   return Object.values(obj)
+// }
+
 function valuesInObject(obj) {
-  return Object.values(obj)
+  let array = []
+  for (let keys in obj) {
+    array.push(obj[keys])
+  }
+  return array
 }
 
 let animals = { dog: "Wolfie", cat: "Jet", bison: "Bilbo" }
