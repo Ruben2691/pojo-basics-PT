@@ -6,16 +6,18 @@ adding the second parameter as a key using the third parameter as its value.
 
 Examples:
 
+
+***********************************************************************/
+
+function setKeyInObject(obj, string, value) {
+    obj[string] = value
+    return obj
+}
+
 let obj = {}
 setKeyInObject(obj, "apple", "yum"); // => {apple: "yum"}
 
 let obj1 = {str: "hello"}
 setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
-***********************************************************************/
-
-function setKeyInObject(obj, string, value) {
-  
-}
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = setKeyInObject;
